@@ -726,7 +726,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4[, E5]]]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 250, 250, 5, 50 }
+#define DEFAULT_MAX_FEEDRATE          { 250, 250, 5, 250 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -734,7 +734,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4[, E5]]]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 50, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 2000, 2000, 50, 10000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -776,7 +776,7 @@
   #define DEFAULT_ZJERK  0.3
 #endif
 
-#define DEFAULT_EJERK    5.0  // May be used by Linear Advance
+#define DEFAULT_EJERK    10.0  // May be used by Linear Advance
 
 /**
  * S-Curve Acceleration
@@ -1444,14 +1444,14 @@
 // @section temperature
 
 // Preheat Constants
-#define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 180
-#define PREHEAT_1_TEMP_BED     60
+#define PREHEAT_1_LABEL       "PETG"
+#define PREHEAT_1_TEMP_HOTEND 221
+#define PREHEAT_1_TEMP_BED     81
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
 #define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 240
-#define PREHEAT_2_TEMP_BED    95
+#define PREHEAT_2_TEMP_HOTEND 236
+#define PREHEAT_2_TEMP_BED    101
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
